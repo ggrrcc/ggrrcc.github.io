@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gregory Radu Colonescu | Home</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             scroll-behavior: smooth;
         }
+    </style> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<!-- <body class="bg-gray-50 text-gray-900"> -->
+    <body class="bg-white text-gray-800">
+
     
     <!-- Nav -->
-    <header class="bg-gray-800 text-white py-4 fixed w-full">
+    <!-- <header class="bg-gray-800 text-white py-4 fixed w-full">
         <nav class="container mx-auto px-4 flex justify-between items-center">
             <h1 class="font-bold text-xl">Gregory Radu Colonescu</h1>
             <ul class="flex space-x-4">
@@ -24,17 +36,38 @@
                 <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
             </ul>
         </nav>
+    </header> -->
+    <header class="bg-black text-white py-6 shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl tracking-tight">Gregory Radu Colonescu</h1>
+            <nav class="space-x-6 text-sm">
+                <a href="#about" class="hover:text-indigo-300">About</a>
+                <a href="#work" class="hover:text-indigo-300">Work</a>
+                <a href="#projects" class="hover:text-indigo-300">Projects</a>
+                <a href="#contact" class="hover:text-indigo-300">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <section class="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-700 text-white text-center">
+    <!-- <section class="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-700 text-white text-center"> -->
+    <section class="bg-indigo-800 text-white py-32 text-center">
+        <div class="max-w-2xl mx-auto">
+    
         <h2 class="text-5xl font-bold">Hello, I'm Gregory Colonescu</h2>
-        <p class="text-xl mt-3">Quantitative Researcher | Machine Learning in Finance | Data-Driven Alpha</p>
+        <p class="text-l mt-3">Quantitative Researcher | Machine Learning in Finance | Data-Driven Alpha</p>
+        <div>
+            <p class="text-l mt-3"></p>
+        </div>
         <a href="documents/Gregory_Colonescu_Resume_Sp25_v1.7.pdf" class="mt-6 px-4 py-2 bg-white text-indigo-700 rounded shadow hover:bg-gray-200">View Resume</a>
+    <!-- </section> -->
+    </div>
     </section>
 
     <!-- About Me -->
-    <section id="about" class="py-20 px-4 bg-white">
-        <div class="container mx-auto">
+    <!-- <section id="about" class="py-20 px-4 bg-white">
+        <div class="container mx-auto"> -->
+    <section id="about" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl font-bold text-center">About Me</h2>
             <p class="text-center text-gray-600 mt-4 max-w-3xl mx-auto">
                 I'm a Master's in Financial Engineering candidate at Lehigh University graduating in May with a BS in Mathematics and BBA in Finance from UT Austin. I have work experience in Python and R at Hilltop Holdings, ING Bank, and more experience at Edgewater Markets.
@@ -46,9 +79,13 @@
     </section>
 
     <!-- Work -->
-    <section id="work" class="py-20 px-4 bg-gray-100">
+    <!-- <section id="work" class="py-20 px-4 bg-gray-100">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center">Work Experience</h2>
+            <h2 class="text-4xl font-bold text-center">Work Experience</h2> -->
+    <section id="work" class="py-20 bg-white px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Professional Experience</h2>
+            <!-- <div class="space-y-10"> -->
             <!-- Edgewater -->
             <div class="bg-white shadow rounded-lg p-6">
                 <h3 class="font-bold text-xl">Proprietary Currency Trader (part-time) | Edgewater Holdings | Bethlehem, Pennsylvania</h3>
@@ -85,10 +122,14 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="py-20 px-4 bg-white">
+    <!-- <section id="projects" class="py-20 px-4 bg-white">
         <div class="container mx-auto">
             <h2 class="text-4xl font-bold text-center">Projects</h2>
-            <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8"> -->
+    <section id="projects" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-10">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- ML I -->
                 <div class="shadow rounded-lg overflow-hidden">
                     <img src="photos/ML_I_Alpha_Interpretability_Graph.png" alt="ML Interpretability">
@@ -125,8 +166,10 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-20 px-4 bg-gray-800 text-white">
-        <div class="container mx-auto text-center">
+    <!-- <section id="contact" class="py-20 px-4 bg-gray-800 text-white">
+        <div class="container mx-auto text-center"> -->
+    <section id="contact" class="py-20 bg-black text-white text-center">
+        <div class="max-w-4xl mx-auto">
             <h2 class="text-4xl font-bold">Get in Touch</h2>
             <p class="mt-4">Feel free to reach out through any of the platforms below.</p>
             <div class="mt-6 flex justify-center space-x-4">
@@ -138,7 +181,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-4 text-center bg-gray-900 text-gray-400">
+    <!-- <footer class="py-4 text-center bg-gray-900 text-gray-400">
+        © 2025 Gregory Radu Colonescu. All Rights Reserved.
+    </footer> -->
+    <footer class="text-center py-4 bg-gray-900 text-gray-400 text-sm">
         © 2025 Gregory Radu Colonescu. All Rights Reserved.
     </footer>
 </body>
